@@ -6,10 +6,10 @@
 clear
 
 echo "";
-echo "         YOUTUBE DOWNLOADER   " | lolcat
+echo "              YOUTUBE DOWNLOADER   " | lolcat
 echo "                SUPPORT MP3/MP4      " | lolcat
 echo "              By: Rigan Ferdiansyah    " | lolcat
-echo "          @2020 Rigan Ferdiansyah  " | lolcat
+echo "             @2020 Rigan Ferdiansyah  " | lolcat
 echo "";
 
 trap ctrl_c INT
@@ -47,7 +47,8 @@ read -p "Pilih Nomor :" pilih;
 
 case $pilih in
 
-1) echo "Masukan Link Youtube :"; read link
+1) clear
+echo "Masukan Link Youtube :"; read link
 youtube-dl -i --no-warning --add-metadata --merge-output-format mp4 --embed-thumbnail -f 160+140 $link
 echo "";
 echo "File tersimpan di Internal Storage > Youtube";
