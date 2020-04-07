@@ -5,24 +5,25 @@
 
 clear
 
-blue='\e[1;34m'
-green='\e[1;32m'
-purple='\e[1;35m'
+biru='\e[1;34m'
+ijo='\e[1;32m'
+ungu='\e[1;35m'
 cyan='\e[1;36m'
-red='\e[1;31m'
-white='\e[1;37m'
-yellow='\e[1;33m'
+abang='\e[1;31m'
+putih='\e[1;37m'
+kuning='\e[1;33m'
 tanggal=`date "+%d.%m.%Y"`
 waktu=`date "+%H:%M"`
 
 echo "";
-echo -e $blue "              YOUTUBE DOWNLOADER   ";
-echo -e $red "                SUPPORT MP3/MP4      ";
-echo -e $yellow "              By: Rigan Ferdiansyah    ";
-echo -e $green "             @2020 Rigan Ferdiansyah  ";
+echo -e $ungu "              YOUTUBE DOWNLOADER   ";
+echo -e $abang "                SUPPORT MP3/MP4      ";
+echo -e $kuning "              By: Rigan Ferdiansyah    ";
+echo -e $ijo "             @2020 Rigan Ferdiansyah  ";
 echo "";
-echo "Tanggal :" $tanggal | lolcat
-echo "Jam : " $waktu | lolcat
+echo -e $kuning "Tanggal :" $tanggal
+echo -e $kuning "Jam         : " $waktu
+echo "";
 
 trap ctrl_c INT
 ctrl_c() {
@@ -32,25 +33,27 @@ sleep 1
 exit
 }
 
-echo "       PILIH MENU             " | lolcat
-echo "   1. VIDEO 144P (mp4)" | lolcat
-echo "   2. VIDEO 144P (mkv)" | lolcat
-echo "   3. VIDEO 240P (mp4)" | lolcat
-echo "   4. VIDEO 240P (mkv)" | lolcat
-echo "   5. VIDEO 360P (mp4)" | lolcat
-echo "   6. VIDEO 360P (mkv)" | lolcat
-echo "   7. VIDEO 480P (mp4)" | lolcat
-echo "   8. VIDEO 480P (mkv)" | lolcat
-echo "   9. VIDEO 720P (mp4)" | lolcat
-echo "  10. VIDEO 720P (mkv)" | lolcat
-echo "  11. VIDEO 720P 50/60 FPS (mp4)" | lolcat
-echo "  12. VIDEO 720P 50/60 FPS (mkv)" | lolcat
-echo "  13. VIDEO 1080P (mp4)" | lolcat
-echo "  14. VIDEO 1080P (mkv)" | lolcat
-echo "  15. VIDEO 1080P 50/60 FPS (mp4)" | lolcat
-echo "  16. VIDEO 1080P 50/60 FPS (mkv)" | lolcat
-echo "  17. AUDIO (mp3)" | lolcat
-echo "  18. AUDIO (flac)" | lolcat
+echo "******************" | lolcat
+echo "*      PILIH MENU            *" | lolcat
+echo "******************" | lolcat
+echo -e $ungu "   1. VIDEO 144P (mp4)";
+echo -e $ungu "   2. VIDEO 144P (mkv)";
+echo -e $biru "   3. VIDEO 240P (mp4)";
+echo -e $biru "   4. VIDEO 240P (mkv)";
+echo -e $abang "   5. VIDEO 360P (mp4)";
+echo -e $abang "   6. VIDEO 360P (mkv)";
+echo -e $ijo "   7. VIDEO 480P (mp4)";
+echo -e $ijo "   8. VIDEO 480P (mkv)";
+echo -e $putih "   9. VIDEO 720P (mp4)";
+echo -e $putih "  10. VIDEO 720P (mkv)";
+echo -e $kuning "  11. VIDEO 720P 50/60 FPS (mp4)";
+echo -e $kuning"  12. VIDEO 720P 50/60 FPS (mkv)";
+echo -e $cyan "  13. VIDEO 1080P (mp4)";
+echo -e $cyan "  14. VIDEO 1080P (mkv)";
+echo -e $abang"  15. VIDEO 1080P 50/60 FPS (mp4)";
+echo -e $abang"  16. VIDEO 1080P 50/60 FPS (mkv)";
+echo -e $kuning"  17. AUDIO (mp3)";
+echo -e $kuning "  18. AUDIO (flac)";
 echo "  0. EXIT" | lolcat
 echo "";
 read -p "Pilih Nomor :" pilih;
@@ -60,7 +63,7 @@ read -p "Pilih Nomor :" pilih;
 case $pilih in
 
 1) clear
-echo "Masukan Link Youtube :"; read link
+echo "Masukan Link Youtube :"; read -p link
 clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mp4 --embed-thumbnail -f 160+140 $link
 clear
