@@ -5,12 +5,24 @@
 
 clear
 
+blue='\e[1;34m'
+green='\e[1;32m'
+purple='\e[1;35m'
+cyan='\e[1;36m'
+red='\e[1;31m'
+white='\e[1;37m'
+yellow='\e[1;33m'
+tanggal=`date "+%d.%m.%Y"`
+waktu=`date "+%H:%M"`
+
 echo "";
-echo "              YOUTUBE DOWNLOADER   " | lolcat
-echo "                SUPPORT MP3/MP4      " | lolcat
-echo "              By: Rigan Ferdiansyah    " | lolcat
-echo "             @2020 Rigan Ferdiansyah  " | lolcat
+echo -e $blue "              YOUTUBE DOWNLOADER   ";
+echo -e $red "                SUPPORT MP3/MP4      ";
+echo -e $yellow "              By: Rigan Ferdiansyah    ";
+echo -e $green "             @2020 Rigan Ferdiansyah  ";
 echo "";
+echo "Tanggal :" $tanggal | lolcat
+echo "Jam : " $waktu | lolcat
 
 trap ctrl_c INT
 ctrl_c() {
@@ -198,7 +210,7 @@ echo "Follow Instagram @rig.an" | lolcat
 ;;
 
 18) echo "Masukan Link Youtube :"; read link
-youtube-dl -x --audio-format flac --audio-quality 5 $link
+youtube-dl -x --audio-format flac --audio-quality 0 $link
 echo "";
 echo "File Tersimpan di Internal Storage > Youtube" | lolcat
 echo "Follow Instagram @rig.an" | lolcat
