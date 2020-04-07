@@ -5,13 +5,11 @@
 
 clear
 
-figlet  "..::RGZ VaVelz::.."  | lolcat
-
 echo "";
 echo "         YOUTUBE DOWNLOADER   " | lolcat
 echo "                SUPPORT MP3/MP4      " | lolcat
 echo "              By: Rigan Ferdiansyah    " | lolcat
-echo"          @2020 Rigan Ferdiansyah  " | lolcat
+echo "          @2020 Rigan Ferdiansyah  " | lolcat
 echo "";
 
 trap ctrl_c INT
