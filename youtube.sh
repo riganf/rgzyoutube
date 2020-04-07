@@ -49,23 +49,31 @@ case $pilih in
 
 1) clear
 echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mp4 --embed-thumbnail -f 160+140 $link
+clear
 echo "";
 echo "File tersimpan di Internal Storage > Youtube";
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-2) echo "Masukan Link Youtube :"; read link
+2) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mkv --all-subs --convert-subs srt --embed-subs -f 160+140 $link
+clear
 echo "";
 echo "File Tersimpan di Internal Storage > Youtube" | lolcat
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-3) echo "Masukan Link Youtube :"; read link
+3) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mp4 --embed-thumbnail -f 133+140 $link
+clear
 echo "";
 echo "File tersimpan di Internal Storage > Youtube";
 echo "Follow Instagram @rig.an" | lolcat
@@ -73,8 +81,11 @@ echo "Follow Instagram @rig.an" | lolcat
 ;;
 
 
-4) echo "Masukan Link Youtube :"; read link
+4) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mkv --all-subs --convert-subs srt --embed-subs -f 133+140 $link
+clear
 echo "";
 echo "File Tersimpan di Internal Storage > Youtube" | lolcat
 echo "Follow Instagram @rig.an" | lolcat
