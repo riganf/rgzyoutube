@@ -34,27 +34,27 @@ exit
 }
 
 echo "******************" | lolcat
-echo "*      PILIH MENU            *" | lolcat
+echo "*      PILIH MENU         *" | lolcat
 echo "******************" | lolcat
-echo -e $ungu "   1. VIDEO 144P (mp4)";
-echo -e $ungu "   2. VIDEO 144P (mkv)";
-echo -e $biru "   3. VIDEO 240P (mp4)";
-echo -e $biru "   4. VIDEO 240P (mkv)";
-echo -e $abang "   5. VIDEO 360P (mp4)";
-echo -e $abang "   6. VIDEO 360P (mkv)";
-echo -e $ijo "   7. VIDEO 480P (mp4)";
-echo -e $ijo "   8. VIDEO 480P (mkv)";
-echo -e $putih "   9. VIDEO 720P (mp4)";
-echo -e $putih "  10. VIDEO 720P (mkv)";
+echo -e $ungu     "   1. VIDEO 144P (mp4)";
+echo -e $ungu     "   2. VIDEO 144P (mkv)";
+echo -e $biru       "   3. VIDEO 240P (mp4)";
+echo -e $biru       "   4. VIDEO 240P (mkv)";
+echo -e $abang  "   5. VIDEO 360P (mp4)";
+echo -e $abang  "   6. VIDEO 360P (mkv)";
+echo -e $ijo          "   7. VIDEO 480P (mp4)";
+echo -e $ijo          "   8. VIDEO 480P (mkv)";
+echo -e $putih    "   9. VIDEO 720P (mp4)";
+echo -e $putih    "  10. VIDEO 720P (mkv)";
 echo -e $kuning "  11. VIDEO 720P 50/60 FPS (mp4)";
-echo -e $kuning"  12. VIDEO 720P 50/60 FPS (mkv)";
-echo -e $cyan "  13. VIDEO 1080P (mp4)";
-echo -e $cyan "  14. VIDEO 1080P (mkv)";
-echo -e $abang"  15. VIDEO 1080P 50/60 FPS (mp4)";
-echo -e $abang"  16. VIDEO 1080P 50/60 FPS (mkv)";
-echo -e $kuning"  17. AUDIO (mp3)";
+echo -e $kuning "  12. VIDEO 720P 50/60 FPS (mkv)";
+echo -e $cyan     "  13. VIDEO 1080P (mp4)";
+echo -e $cyan     "  14. VIDEO 1080P (mkv)";
+echo -e $abang  "  15. VIDEO 1080P 50/60 FPS (mp4)";
+echo -e $abang  "  16. VIDEO 1080P 50/60 FPS (mkv)";
+echo -e $kuning "  17. AUDIO (mp3)";
 echo -e $kuning "  18. AUDIO (flac)";
-echo "  0. EXIT" | lolcat
+echo "                         0. EXIT" | lolcat
 echo "";
 read -p "Pilih Nomor :" pilih;
 
@@ -63,7 +63,7 @@ read -p "Pilih Nomor :" pilih;
 case $pilih in
 
 1) clear
-echo "Masukan Link Youtube :"; read -p link
+echo "Masukan Link Youtube :"; read link
 clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mp4 --embed-thumbnail -f 160+140 $link
 clear
@@ -107,8 +107,11 @@ echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-5) echo "Masukan Link Youtube :"; read link
+5) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mp4 --embed-thumbnail -f 134+140 $link
+clear
 echo "";
 echo "File tersimpan di Internal Storage > Youtube";
 echo "Follow Instagram @rig.an" | lolcat
@@ -116,104 +119,143 @@ echo "Follow Instagram @rig.an" | lolcat
 ;;
 
 
-6) echo "Masukan Link Youtube :"; read link
+6) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mkv --all-subs --convert-subs srt --embed-subs -f 134+140 $link
+clear
 echo "";
 echo "File Tersimpan di Internal Storage > Youtube" | lolcat
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-7) echo "Masukan Link Youtube :"; read link
+7) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mp4 --embed-thumbnail -f 135+140 $link
+clear
 echo "";
 echo "File tersimpan di Internal Storage > Youtube";
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-8) echo "Masukan Link Youtube :"; read link
+8) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mkv --all-subs --convert-subs srt --embed-subs -f 135+140 $link
+clear
 echo "";
 echo "File Tersimpan di Internal Storage > Youtube" | lolcat
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-9) echo "Masukan Link Youtube :"; read link
+9) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mp4 --embed-thumbnail -f 136+140 $link
+clear
 echo "";
 echo "File tersimpan di Internal Storage > Youtube";
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-10) echo "Masukan Link Youtube :"; read link
+10) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mkv --all-subs --convert-subs srt --embed-subs -f 136+140 $link
+clear
 echo "";
 echo "File Tersimpan di Internal Storage > Youtube" | lolcat
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-11) echo "Masukan Link Youtube :"; read link
+11) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mp4 --embed-thumbnail -f 298+140 $link
+clear
 echo "";
 echo "File tersimpan di Internal Storage > Youtube";
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-12) echo "Masukan Link Youtube :"; read link
+12) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mkv --all-subs --convert-subs srt --embed-subs -f 298+140 $link
+clear
 echo "";
 echo "File Tersimpan di Internal Storage > Youtube" | lolcat
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-13) echo "Masukan Link Youtube :"; read link
+13) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mp4 --embed-thumbnail -f 137+140 $link
+clear
 echo "";
 echo "File tersimpan di Internal Storage > Youtube";
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-14) echo "Masukan Link Youtube :"; read link
+14) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mkv --all-subs --convert-subs srt --embed-subs -f 137+140 $link
+clear
 echo "";
 echo "File Tersimpan di Internal Storage > Youtube" | lolcat
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-15) echo "Masukan Link Youtube :"; read link
+15) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mp4 --embed-thumbnail -f 299+140 $link
+clear
 echo "";
 echo "File tersimpan di Internal Storage > Youtube";
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-16) echo "Masukan Link Youtube :"; read link
+16) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -i --no-warning --add-metadata --merge-output-format mkv --all-subs --convert-subs srt --embed-subs -f 299+140 $link
+clear
 echo "";
 echo "File Tersimpan di Internal Storage > Youtube" | lolcat
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-17) echo "Masukan Link Youtube :"; read link
+17) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -x --audio-format mp3 --audio-quality 0 $link
+clear
 echo "";
 echo "File Tersimpan di Internal Storage > Youtube" | lolcat
 echo "Follow Instagram @rig.an" | lolcat
 
 ;;
 
-18) echo "Masukan Link Youtube :"; read link
+18) clear
+echo "Masukan Link Youtube :"; read link
+clear
 youtube-dl -x --audio-format flac --audio-quality 0 $link
+clear
 echo "";
 echo "File Tersimpan di Internal Storage > Youtube" | lolcat
 echo "Follow Instagram @rig.an" | lolcat
